@@ -1,7 +1,9 @@
 Network Traffic Anomaly Detection System (NTADS)
+
 NTADS is a high-performance security framework designed to identify and mitigate malicious network activities in real-time. By combining Machine Learning (Random Forest & XGBoost) with live data processing, it detects anomalies such as DoS, Probes, and unauthorized access attempts with high precision.
 
 🌟 Key Features
+
 Hybrid ML Engine: Utilizes an ensemble of Random Forest and XGBoost trained on the NSL-KDD dataset for robust classification.
 
 Dual-Mode Data Ingestion: Supports Live Packet Sniffing via Scapy and a High-Fidelity Simulation Engine for environments without specialized drivers.
@@ -13,6 +15,7 @@ Active Mitigation (IPS): Integrated "Block IP" functionality to simulate immedia
 High Accuracy: Achieves a balanced detection rate of over 98% on standard benchmark tests.
 
 🛠️ Tech Stack
+
 Language: Python 3.11
 
 Frameworks: Flask, Flask-CORS
@@ -24,7 +27,8 @@ Networking: Scapy (for packet analysis)
 Frontend: HTML5, CSS3, JavaScript, Chart.js
 
 📁 Project Structure
-Plaintext
+
+
 Network_IDS/
 ├── data/               # NSL-KDD Dataset files
 ├── models/             # Serialized ML models (.pkl)
@@ -32,12 +36,14 @@ Network_IDS/
 ├── app.py              # Backend API & Detection Logic
 ├── requirements.txt    # Dependency list
 └── README.md           # Documentation
-🚀 Getting Started
-1. Installation
-Clone the repository and install the required dependencies:
 
-Bash
+🚀 Getting Started
+
+1. Installation
+
+Clone the repository and install the required dependencies:
 pip install -r requirements.txt
+
 2. Configuration
 Live Mode: To capture real traffic, ensure Npcap is installed in "WinPcap API-compatible Mode" and run VS Code as Administrator.
 
